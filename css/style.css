@@ -6,6 +6,10 @@
   font-family: Canaro;
   src: url(../fonts/Canaro-LightDEMO.ttf);
 }
+@font-face {
+  font-family: Aileron;
+  src: url(../fonts/Aileron-SemiBold.otf);
+}
 *
 {
   margin: 0;
@@ -90,6 +94,30 @@ body
 {
   color: crimson;
   text-decoration: underline;
+}
+.social-icons-sub-section
+{
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  min-width: 40%;
+  top: 25%;
+  z-index: 2;
+}
+.social-icons-sub-section .icon
+{
+  text-align: center;
+}
+
+.social-icons-sub-section .icon svg
+{
+  height: 2rem;
+  width: 1rem;
+  color: #fff;
+}
+.social-icons-sub-section .icon:hover
+{
+  cursor: pointer;
 }
 
 @media (max-width: 685px) and (min-width: 400px){
