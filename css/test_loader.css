@@ -1,0 +1,95 @@
+@font-face {
+  font-family: Baron;
+  src: url(../fonts/BaronNeue-Regular.otf);
+}
+@font-face {
+  font-family: Canaro;
+  src: url(../fonts/Canaro-LightDEMO.ttf);
+}
+@font-face {
+  font-family: Aileron;
+  src: url(../fonts/Aileron-SemiBold.otf);
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baron';
+}
+body
+{
+  height: 100vh;
+  min-width: 100%;
+  background-color: #000;
+  font-family: 'Baron';
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper
+{
+  height: 50%;
+  width: 50%;
+  position: relative;
+  
+  animation: shadows 2s linear infinite alternate;
+}
+@keyframes shadows {
+  0%{
+    box-shadow: 0 0 100px rgb(9, 226, 161);
+  }
+  50%{
+    box-shadow: 0 0 100px rgb(230, 60, 9);
+  }
+  100%{
+    box-shadow: 0 0 100px rgb(226, 9, 208);
+  }
+  
+}
+.wrapper h1
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  font-weight:500;
+}
+.wrapper h1:hover
+{
+  cursor: pointer;
+}
+.wrapper h1 span
+{
+  color: crimson;
+  font-size: 13rem;
+  font-family: 'Aileron';
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px crimson;
+}
+/* .wrapper h1::after, 
+.wrapper h1::before
+{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: crimson;
+}
+.wrapper h1::before
+{
+  top: 0;
+  right: 0;
+
+}
+
+.wrapper h1::after
+{
+  bottom: 3rem;
+  left: 0; 
+
+}
+*/
